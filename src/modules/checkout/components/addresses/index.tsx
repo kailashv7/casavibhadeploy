@@ -23,7 +23,9 @@ const Addresses = () => {
       </div>
       {isEdit ? (
         <div className="px-8 pb-8">
-          <ShippingAddress />
+          <ShippingAddress checked={false} onChange={function (): void {
+            throw new Error("Function not implemented.")
+          } } />
           <div className="mt-6">
             <Checkbox
               label="Same as billing address"
